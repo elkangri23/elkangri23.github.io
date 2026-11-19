@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antonio Moles Leiva — Desarrollador web · Granada</title>
+<meta name="description" content="Portfolio de Antonio Moles Leiva, desarrollador web en Granada. Meridiano-cero, Retaton, MapaMental y listaCompra, con IA corriendo en local.">
+<meta property="og:title" content="Antonio Moles Leiva — Desarrollador web">
+<meta property="og:description" content="Aplicaciones que se usan de verdad: del backend a la interfaz, con IA en local.">
+<meta property="og:image" content="banner.png">
+<link rel="icon" href="avatar.jpg">
+<style>
+  :root{--bg:#0b1220;--bg2:#101828;--card:#131c2e;--ink:#f8f7f4;--muted:#a8b3c5;--teal:#2dd4bf;--teal-dark:#0e7c7b;--gold:#c9a227;--red:#c0392b;--border:#243349}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:var(--teal);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+  header.banner img{width:100%;display:block;border-bottom:3px solid var(--gold)}
+  .hero{padding:48px 0 32px;text-align:center}
+  .hero img.avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid var(--teal);margin-top:-110px;background:var(--bg2);position:relative}
+  .hero h1{font-size:2.2rem;margin:18px 0 4px}
+  .hero p.sub{color:var(--muted);font-size:1.15rem}
+  .hero p.intro{max-width:680px;margin:18px auto 0;color:#d6dce8}
+  .buttons{margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:700;border:2px solid var(--teal)}
+  .btn.primary{background:var(--teal);color:#062a26}
+  .btn.primary:hover{text-decoration:none;opacity:.9}
+  .btn.ghost{color:var(--teal)}
+  .btn.ghost:hover{text-decoration:none;background:#2dd4bf14}
+  section{padding:36px 0}
+  h2{font-size:1.5rem;margin-bottom:6px}
+  h2 span{color:var(--gold)}
+  .section-sub{color:var(--muted);margin-bottom:22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px}
+  .card h3{font-size:1.2rem;margin-bottom:8px}
+  .card p{color:#d6dce8;font-size:.98rem}
+  .card .stack{color:var(--teal);font-size:.88rem;margin:12px 0}
+  .card .links{margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;font-weight:700}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{background:#1a2740;border:1px solid var(--border);border-radius:999px;padding:6px 13px;font-size:.9rem}
+  .timeline{list-style:none}
+  .timeline li{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:10px;padding:16px 18px;margin-bottom:12px}
+  .timeline strong{display:block}
+  .timeline span{color:var(--muted);font-size:.92rem}
+  .now{list-style:none}
+  .now li{padding:8px 0;border-bottom:1px solid var(--border)}
+  footer{border-top:1px solid var(--border);padding:28px 0 40px;text-align:center;color:var(--muted)}
+  @media(max-width:600px){.hero h1{font-size:1.7rem}.hero img.avatar{width:128px;height:128px;margin-top:-70px}}
+</style>
+</head>
+<body>
+<header class="banner"><img src="banner.png" alt="Banner de Antonio Moles Leiva, espartano con su falange de lenguajes de programación luchando contra una mala idea"></header>
+
+<main class="wrap">
+  <div class="hero">
+    <img class="avatar" src="avatar.jpg" alt="Avatar de Antonio Moles Leiva, espartano con casco de cresta roja">
+    <h1>Antonio Moles Leiva</h1>
+    <p class="sub">Desarrollador web · Granada, España</p>
+    <p class="intro">Me gusta construir aplicaciones que se usan de verdad: del backend a la interfaz, y últimamente con IA corriendo en local, donde yo controlo los datos. Aprendo construyendo.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://github.com/elkangri23">GitHub</a>
+      <a class="btn ghost" href="https://es.linkedin.com/in/antonio-moles-leiva-9700703a">LinkedIn</a>
+      <a class="btn ghost" href="https://meridianocero.laurafernandezenfermeria.com">Jugar a Meridiano-cero</a>
+    </div>
+  </div>
+
+  <section id="proyectos">
+    <h2>🚀 <span>Proyectos</span></h2>
+    <p class="section-sub">Lo que estoy construyendo ahora.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>Meridiano-cero</h3>
+        <p>Juego público de investigación internacional. Motor determinista, generador de casos y partidas jugables en casa con tu propio LLM local. En español, inglés y francés.</p>
+        <p class="stack">TypeScript · Ollama / LM Studio</p>
+        <div class="links"><a href="https://meridianocero.laurafernandezenfermeria.com">En vivo ↗</a><a href="https://github.com/elkangri23/Meridiano-cero">Código ↗</a></div>
+      </article>
+      <article class="card">
+        <h3>Retaton</h3>
+        <p>App de interacción con la audiencia en español, estilo Mentimeter + Kahoot: presentaciones en vivo, preguntas, concursos con rachas y podio.</p>
+        <p class="stack">PHP · Laravel 13 · React · TypeScript · Inertia · MySQL · Redis</p>
+        <div class="links"><a href="https://retaton.laurafernandezenfermeria.com">En vivo ↗</a></div>
+      </article>
+      <article class="card">
+        <h3>MapaMental</h3>
+        <p>App para Windows que convierte ideas en mapas mentales y presentaciones editables, con IA local (Ollama / LM Studio) o remota.</p>
+        <p class="stack">TypeScript</p>
+        <div class="links"><a href="https://github.com/elkangri23/MapaMental">Código ↗</a></div>
+      </article>
+      <article class="card">
+        <h3>listaCompra</h3>
+        <p>Backend de lista de la compra colaborativa, para aprender Clean Architecture / Hexagonal con Outbox.</p>
+        <p class="stack">TypeScript</p>
+        <div class="links"><a href="https://github.com/elkangri23/listaCompra">Código ↗</a></div>
+      </article>
+      <article class="card">
+        <h3>ChochiBot</h3>
+        <p>Agente de IA personal y local por Telegram, con Ollama, Groq y OpenRouter. Skills dinámicas, gestión del VPS por SSH, GitHub y memoria RAG.</p>
+        <p class="stack">Python · Ollama · Groq · OpenRouter · Telegram</p>
+        <div class="links"><a href="https://github.com/elkangri23/ChochiBot">Código ↗</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="stack">
+    <h2>🛠️ <span>Stack</span></h2>
+    <p class="section-sub">Día a día: PHP · Laravel · HTML · CSS · ASP.NET Web Forms · C# · SQL Server. Aprendiendo a fondo: TypeScript · IA local.</p>
+    <div class="chips">
+      <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">SQL Server</span><span class="chip">Docker</span><span class="chip">Ollama</span><span class="chip">LM Studio</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+    </div>
+  </section>
+
+  <section id="formacion">
+    <h2>📚 <span>Formación</span></h2>
+    <ul class="timeline">
+      <li><strong>Máster en Desarrollo con IA</strong><span>BigASchool · 2026</span></li>
+      <li><strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong><span>2015</span></li>
+      <li><strong>Técnico Superior en Desarrollo de Aplicaciones Informáticas</strong><span>2007</span></li>
+    </ul>
+  </section>
+
+  <section id="ahora">
+    <h2>🌱 <span>Ahora mismo</span></h2>
+    <ul class="now">
+      <li>🔭 Terminando de pulir <strong>Meridiano-cero</strong> y <strong>Retaton</strong> en producción</li>
+      <li>🌱 Profundizando en <strong>TypeScript</strong> y en agentes de IA en local</li>
+      <li>💡 Explorando alternativas open source y autoalojadas a apps de pago</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>📫 <span>¿Hablamos?</span></h2>
+    <p>Lo mejor para hablar de código es abrir un issue en alguno de mis repos públicos, o encontrarme en <a href="https://es.linkedin.com/in/antonio-moles-leiva-9700703a">LinkedIn</a> y en <a href="https://github.com/elkangri23">GitHub</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Antonio Moles Leiva · Granada, España · Hecho con GitHub Pages</div>
+</footer>
+</body>
+</html>
